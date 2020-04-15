@@ -36,5 +36,10 @@ public class CustomerClient {
         return restTemplate.postForLocation(apiHost + CUSTOMER_PATH_V1, customerDto);
     }
 
+    public void updateCustomerById(UUID customerId, CustomerDto customerDto){
+        restTemplate.put(apiHost + CUSTOMER_PATH_V1 + customerId.toString(), customerDto);
+    }
+
+
 
 }
