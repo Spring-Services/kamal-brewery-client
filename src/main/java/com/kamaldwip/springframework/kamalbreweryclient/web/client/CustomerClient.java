@@ -40,6 +40,8 @@ public class CustomerClient {
         restTemplate.put(apiHost + CUSTOMER_PATH_V1 + customerId.toString(), customerDto);
     }
 
-
+    public void deleteCustomer(UUID customerId){
+        restTemplate.delete(apiHost + CUSTOMER_PATH_V1 + customerId.toString());
+    }
 
 }
