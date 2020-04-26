@@ -1,0 +1,6 @@
+kamal:
+   httpClient:
+      defaultConnections: 20
+      maxConnections: 100
+      requestTimeout: 3000
+      socketTimeout: 3000
